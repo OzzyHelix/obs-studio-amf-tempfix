@@ -4,10 +4,10 @@
 # Contributor: ArcticVanguard <LideEmily at gmail dot com>
 # Contributor: ledti <antergist at gmail dot com>
 
-pkgname=obs-studio-amf-tmpfix
+pkgname=obs-studio-amf
 pkgver=30.0.2
 pkgrel=4
-pkgdesc="add your description here"
+pkgdesc="Free, open source software for live streaming and recording. Includes new AMF encoding patch & browser plugin"
 arch=('x86_64')
 url="https://obsproject.com"
 license=('GPL2')
@@ -79,7 +79,7 @@ sha256sums=('SKIP'
             'SKIP'
             'SKIP'
             'bdfbd062f080bc925588aec1989bb1df34bf779cc2fc08ac27236679cf612abd'
-            '781a71590773067e9b59e3aa186446ee7b8d0d7389b67701f76267569806dbed')
+            '5c3a9c11136c3d146f7e3c41b4bee5ee821c0d22298c433cc99a0cfecdd5c4d0')
 
 prepare() {
   cd obs-studio
