@@ -1,5 +1,5 @@
-pkgbase = obs-studio-av1
-	pkgdesc = Free, open source software for live streaming and recording. With AV1, Websocket, and Browser Source support.
+pkgbase = obs-studio-amf
+	pkgdesc = Free, open source software for live streaming and recording. Includes new AMF encoding patch & browser plugin.
 	pkgver = 30.0.2
 	pkgrel = 4
 	url = https://obsproject.com
@@ -70,4 +70,4 @@ pkgbase = obs-studio-av1
 	sha256sums = bdfbd062f080bc925588aec1989bb1df34bf779cc2fc08ac27236679cf612abd
 	sha256sums = 539adb1a8c5e18fd589153a9e23642da0d79bc882be4f1c4bae9d72f7b6008d8
 
-pkgname = obs-studio-av1
+pkgname = obs-studio-amf
