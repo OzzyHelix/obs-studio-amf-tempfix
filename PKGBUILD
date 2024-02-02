@@ -28,6 +28,7 @@ depends=(
   'qt6-svg'
   'rnnoise'
   'speexdsp'
+  'amf-amdgpu-pro'
 
   # Deps of Websocket plugin
   'qrcodegencpp-cmake'
@@ -47,6 +48,7 @@ makedepends=(
   'wayland'
   'x264'
   'xdg-desktop-portal'
+  'amf-headers'
 
   # Deps of Websocket plugin
   'nlohmann-json'
