@@ -30,6 +30,7 @@ depends=(
   'rnnoise'
   'speexdsp'
   'amf-amdgpu-pro'
+  'linux-firmware-git'
 
   # Deps of Websocket plugin
   'qrcodegencpp-cmake'
