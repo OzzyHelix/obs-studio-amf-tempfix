@@ -1,8 +1,9 @@
-# Maintainer: Branan Riley <branan@top-secret.network>
+# Maintainer: José Miguel Sarasola <jmsaraur@gmail.com>
 # Contributor: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Benjamin Klettbach <b.klettbach@gmail.com>
 # Contributor: ArcticVanguard <LideEmily at gmail dot com>
 # Contributor: ledti <antergist at gmail dot com>
+
 
 pkgname=obs-studio-amf
 pkgver=30.0.2
@@ -29,6 +30,7 @@ depends=(
   'rnnoise'
   'speexdsp'
   'amf-amdgpu-pro'
+  'linux-firmware-git'
 
   # Deps of Websocket plugin
   'qrcodegencpp-cmake'
