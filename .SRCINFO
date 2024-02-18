@@ -23,6 +23,7 @@ pkgbase = obs-studio-amf
 	makedepends = websocketpp
 	makedepends = asio
 	makedepends = cef-minimal-obs-bin
+	makedepends = amf-headers
 	depends = curl
 	depends = ffmpeg
 	depends = gtk-update-icon-cache
