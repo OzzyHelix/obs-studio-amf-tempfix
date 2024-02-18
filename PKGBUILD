@@ -1,8 +1,6 @@
 # Maintainer: José Miguel Sarasola <jmsaraur@gmail.com>
 # Contributor: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Benjamin Klettbach <b.klettbach@gmail.com>
-# Contributor: ArcticVanguard <LideEmily at gmail dot com>
-# Contributor: ledti <antergist at gmail dot com>
 
 
 pkgname=obs-studio-amf
