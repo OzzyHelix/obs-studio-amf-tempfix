@@ -1,5 +1,3 @@
-# obs-studio-amf tmpfix AUR Package
-# An admission
-I will admit that I have no idea what I'm doing. I simply took the obs-studio-av1 package [here](https://aur.archlinux.org/packages/obs-studio-av1) and replaced the `add_ffmpeg_vaapi_av1.patch` file with the `obs-amf-patch.patch` and replaced any mention of `add_ffmpeg_vaapi_av1.patch` in the PKGBUILD with `obs-amf-patch.patch` to get obs to build with the amf patch. So I could use obs for some work. The package won't build for me as it stands right now. So I created that repo as a temp fix for anyone having the same issue and hoped that maybe it could be a solution.
-
-this is mostly to fix issues with the package not building and dependencies breaking due to updates 
+# obs-studio-amd concept package
+# explaination
+this is an experiment of mine I added the amf patch from [obs-studio-amf](https://aur.archlinux.org/packages/obs-studio-amf) to [obs-studio-av1](https://aur.archlinux.org/packages/obs-studio-av1) including both patches for AMD AMF and AV1 VAAPI and I am calling this experiment obs-studio-amd. I believe that the 2 projects [obs-studio-amf](https://aur.archlinux.org/packages/obs-studio-amf) and [obs-studio-av1](https://aur.archlinux.org/packages/obs-studio-av1) combined into a new package called `obs-studio-amd` would be better for AMD GPU users as a whole and would be an OBS Studio package made for AMDGPU users
