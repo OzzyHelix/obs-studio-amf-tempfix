@@ -1,5 +1,5 @@
-pkgbase = obs-studio-amf
-	pkgdesc = Free, open source software for live streaming and recording. Includes new AMF encoding patch & browser plugin
+pkgbase = obs-studio-amd
+	pkgdesc = Free, open source software for live streaming and recording. Includes new AMF encoding patch and AV1 encoding patch & browser plugin
 	pkgver = 30.0.2
 	pkgrel = 4
 	url = https://obsproject.com
