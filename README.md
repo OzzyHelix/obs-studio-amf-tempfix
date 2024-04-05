@@ -1,5 +1,7 @@
 # obs-studio-amf tmpfix AUR Package
-# An admission
-I will admit that I have no idea what I'm doing. I simply took the obs-studio-av1 package [here](https://aur.archlinux.org/packages/obs-studio-av1) and replaced the `add_ffmpeg_vaapi_av1.patch` file with the `obs-amf-patch.patch` and replaced any mention of `add_ffmpeg_vaapi_av1.patch` in the PKGBUILD with `obs-amf-patch.patch` to get obs to build with the amf patch. So I could use obs for some work. The package won't build for me as it stands right now. So I created that repo as a temp fix for anyone having the same issue and hoped that maybe it could be a solution.
+this started out as a temp fix for the [obs-studio-amf](https://aur.archlinux.org/packages/obs-studio-amf) package
+and I used the PKGBUILD from [obs-studio-av1](https://aur.archlinux.org/packages/obs-studio-av1). the goal is to build OBS with AMF hardware encoding support which the upstream obs-studio-amf packages fails to do due to inactivity. this will allow OBS Studio to be build with AMF hardware encoding support. Any Pull Request to improve this package are welcome.
 
-this is mostly to fix issues with the package not building and dependencies breaking due to updates 
+regards Ozzy
+# Final Statement
+I am more active on the obs-studio-amd branch of this git repo that includes the AV1 VAAPI patch from obs-studio-av1 as well as the AMF patch that alllows for AMF hardware encoding in OBS Studio. if you are interested in using an OBS patched with AV1 VAAPI and AMF encoding options the obs-studio-amd package should be good for that.
