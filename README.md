@@ -1,4 +1,4 @@
-# obs-studio-amf tmpfix AUR Package
+# obs-studio-amf-tempfix AUR Package
 this started out as a temp fix for the [obs-studio-amf](https://aur.archlinux.org/packages/obs-studio-amf) package
 and I used the PKGBUILD from [obs-studio-av1](https://aur.archlinux.org/packages/obs-studio-av1). the goal is to build OBS with AMF hardware encoding support which the upstream obs-studio-amf packages fails to do due to inactivity. this will allow OBS Studio to be build with AMF hardware encoding support. Any Pull Request to improve this package are welcome.
 
