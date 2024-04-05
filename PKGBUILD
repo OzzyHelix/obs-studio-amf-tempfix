@@ -32,21 +32,37 @@ depends=(
   "libxkbcommon"
   "mbedtls"
   "pciutils"
-  "qrcodegencpp-cmake"
-  "qt6-base"
-  "qt6-svg"
-  "qt6-wayland"
   "rnnoise"
   "speexdsp"
   "srt"
   "util-linux-libs"
-  "vlc-luajit"
   "wayland"
   "x264"
   "zlib"
   'amf-amdgpu-pro'
   'linux-firmware-git'
   'cef-minimal-obs-bin'
+)
+makedepends=(
+  'cmake'
+  'git'
+  'libfdk-aac'
+  'libxcomposite'
+  "vlc-luajit"
+  'pipewire'
+  'python'
+  'qt6-wayland'
+  "qrcodegencpp-cmake"
+  "qt6-base"
+  "qt6-svg"
+  'sndio'
+  'swig'
+  'wayland'
+  'x264'
+  'xdg-desktop-portal'
+  'nlohmann-json'
+  'websocketpp'
+  'asio'
 )
 optdepends=('libfdk-aac: FDK AAC codec support'
             'libva-intel-driver: ffmpeg hardware encoding'
