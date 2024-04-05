@@ -63,7 +63,6 @@ makedepends=(
   'nlohmann-json'
   'websocketpp'
   'asio'
-  'cef-minimal-obs-bin'
 )
 optdepends=('libfdk-aac: FDK AAC codec support'
             'libva-intel-driver: ffmpeg hardware encoding'
