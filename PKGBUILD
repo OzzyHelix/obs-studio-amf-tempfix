@@ -5,57 +5,64 @@
 
 pkgname=obs-studio-amf
 pkgver=30.0.2
-pkgrel=4
+pkgrel=7
 pkgdesc="Free, open source software for live streaming and recording. Includes new AMF encoding patch & browser plugin"
 arch=('x86_64')
 url="https://obsproject.com"
 license=('GPL2')
 depends=(
-  'curl'
-  'ffmpeg'
-  'gtk-update-icon-cache'
-  'jack'
-  'jansson'
-  'libajantv2'
-  'libdatachannel'
-  'librist'
-  'libxinerama'
-  'libxkbcommon-x11'
-  'mbedtls'
-  'onevpl'
-  'pciutils'
-  'qt6-svg'
-  'rnnoise'
-  'speexdsp'
+  "alsa-lib"
+  "curl"
+  "ffmpeg-obs>=6"
+  "fontconfig"
+  "freetype2"
+  "ftl-sdk"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "jansson"
+  "libgl"
+  "libpipewire"
+  "libpulse"
+  "librist"
+  "libva"
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxkbcommon"
+  "mbedtls"
+  "pciutils"
+  "rnnoise"
+  "speexdsp"
+  "srt"
+  "util-linux-libs"
+  "wayland"
+  "x264"
+  "zlib"
   'amf-amdgpu-pro'
   'linux-firmware-git'
-
-  # Deps of Websocket plugin
-  'qrcodegencpp-cmake'
+  'cef-minimal-obs-bin'
 )
 makedepends=(
   'cmake'
   'git'
   'libfdk-aac'
   'libxcomposite'
-  'luajit'
+  "vlc-luajit"
   'pipewire'
   'python'
   'qt6-wayland'
+  "qrcodegencpp-cmake"
+  "qt6-base"
+  "qt6-svg"
   'sndio'
   'swig'
-  'vlc'
   'wayland'
   'x264'
   'xdg-desktop-portal'
-  'amf-headers'
-
-  # Deps of Websocket plugin
   'nlohmann-json'
   'websocketpp'
   'asio'
-
-  # Deps of Browser plugin
   'cef-minimal-obs-bin'
 )
 optdepends=('libfdk-aac: FDK AAC codec support'
@@ -69,7 +76,8 @@ optdepends=('libfdk-aac: FDK AAC codec support'
             'sndio: Sndio input client'
             'v4l2loopback-dkms: virtual camera support'
             'vlc: vlc media source support'
-            'xdg-desktop-portal: pipewire capture support')
+            'xdg-desktop-portal: pipewire capture support'
+)
 provides=("obs-studio=$pkgver" "obs-websocket" "obs-browser")
 conflicts=("obs-studio" "obs-websocket" "obs-browser" "obs-linuxbrowser")
 source=("obs-studio::git+https://github.com/obsproject/obs-studio.git#tag=$pkgver"
@@ -77,7 +85,7 @@ source=("obs-studio::git+https://github.com/obsproject/obs-studio.git#tag=$pkgve
         "obs-websocket::git+https://github.com/obsproject/obs-websocket.git"
         fix_python_binary_loading.patch
         obs-amf-patch.patch)
-sha256sums=('SKIP'
+sha256sums=('5a644b18917417c67314614b32f49df375cdd7fb067e8c28540ac21ee7e69113'
             'SKIP'
             'SKIP'
             'bdfbd062f080bc925588aec1989bb1df34bf779cc2fc08ac27236679cf612abd'
@@ -101,6 +109,7 @@ build() {
     -DBUILD_BROWSER=ON \
     -DCEF_ROOT_DIR="/opt/cef-obs" \
     -DENABLE_VST=ON \
+    -DENABLE_AJA=OFF \
     -DENABLE_JACK=ON \
     -DENABLE_LIBFDK=ON \
     -DOBS_VERSION_OVERRIDE="$pkgver-$pkgrel" \
