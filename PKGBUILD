@@ -40,7 +40,7 @@ depends=(
   "x264"
   "zlib"
   'amf-amdgpu-pro'
-  'linux-firmware-git'
+  'linux-firmware'
   'cef-minimal-obs-bin'
 )
 makedepends=(
