@@ -13,7 +13,6 @@ license=('GPL2')
 depends=(
   "alsa-lib"
   "curl"
-  "ffmpeg-obs>=6"
   "fontconfig"
   "freetype2"
   "ftl-sdk"
