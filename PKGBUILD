@@ -13,7 +13,6 @@ license=('GPL2')
 depends=(
   "alsa-lib"
   "curl"
-  "ffmpeg-obs>=6"
   "fontconfig"
   "freetype2"
   "ftl-sdk"
@@ -39,6 +38,7 @@ depends=(
   "wayland"
   "x264"
   "zlib"
+  "libdatachannel"
   'amf-amdgpu-pro'
   'linux-firmware'
   'cef-minimal-obs-bin'
