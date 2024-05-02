@@ -1,4 +1,8 @@
 # obs-studio-amf-tempfix AUR Package
+
+# Update May 2nd 2024 because of changes in OBS Studio 30.1.2 I can no longer maintain this project it is too complicated for me to update the patch to work and I am trying to get AMF to be enabled in OBS by default if you want to help get the ball rolling on that I suggest you help me tell OBS devs that with this
+https://ideas.obsproject.com/posts/2591/please-enable-amf-amd-hw-encoding-options-on-linux
+
 this started out as a temp fix for the [obs-studio-amf](https://aur.archlinux.org/packages/obs-studio-amf) package
 and I used the PKGBUILD from [obs-studio-av1](https://aur.archlinux.org/packages/obs-studio-av1). the goal is to build OBS with AMF hardware encoding support which the upstream obs-studio-amf packages fails to do due to inactivity. this will allow OBS Studio to be build with AMF hardware encoding support. Any Pull Request to improve this package are welcome.
 
